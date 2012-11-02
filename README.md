@@ -11,8 +11,8 @@ RESTful service URI's...
 - With Security & JSON response – http://localhost:9090/jaxrscxf/services/timeoftheday/asjson/mathew
 - With Security & XML response – http://localhost:9090/jaxrscxf/services/timeoftheday/asxml/mathew
 
-#        <sec:user name="admin" password="password" authorities="admin" />
-#        <sec:user name="johndoe" password="password" authorities="customer, admin" />
+        <sec:user name="admin" password="password" authorities="admin" />
+        <sec:user name="johndoe" password="password" authorities="customer, admin" />
 
 If you need to push this code to the open source PaaS Cloudfoundry.com then follow these instructions (of course refer to Cloudfoundy website too)...
 - First get an account at cloudfoundry.com (hereafter referred to as CF). Whether you chose to go micro CF or the hosted version is your call. I assume hosted here. Note down the one time token.
