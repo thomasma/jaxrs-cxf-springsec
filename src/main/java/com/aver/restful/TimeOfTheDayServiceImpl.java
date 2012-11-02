@@ -17,10 +17,10 @@ public class TimeOfTheDayServiceImpl implements TimeOfTheDayService {
 
 	@GET
 	@Produces("text/plain")
-	@Path("/asplaintext/{name}")
-	public String getTimeOfTheDay(@PathParam("name") String name) {
+	@Path("/asplaintext")
+	public String getTimeOfTheDay() {
 		SimpleDateFormat df = new SimpleDateFormat(PATTERN);
-		return name + "-" + df.format(Calendar.getInstance().getTime());
+		return df.format(Calendar.getInstance().getTime());
 	}
 
 	@GET
